@@ -15,5 +15,5 @@ produce_list = [
 ]
 
 produce_list.each do |name, cost, origin|
-  Product.new( name: name, cost: cost, origin: origin )
+  Product.create( name: name, cost: cost, origin: origin )
 end
