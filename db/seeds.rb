@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+produce_list = [
+  [ "Bread", 5, "Mexico" ],
+  [ "Apple", 6, "China" ],
+  [ "Orange", 2, "Japan" ],
+  [ "Popcorn", 5, "Mali" ],
+  [ "Peanut Butter", 8, "Cananda"],
+  [ "Coconut", 4, "Australia"]
+]
+
+produce_list.each do |name, cost, origin|
+  Product.new( name: name, cost: cost, origin: origin )
+end

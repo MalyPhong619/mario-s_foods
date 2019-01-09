@@ -1,3 +1,7 @@
 <h1>Products</h1>
 
-<p>products here!</p>
+<ul>
+  <% @products.each do |product| %>
+    <li><%= product.name %></li>
+  <% end %>
+</ul>
