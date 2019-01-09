@@ -1,10 +1,6 @@
-class ListsController < ApplicationController
+class ProductsController < ApplicationController
   def products
     @products = Product.all
     render :index
-  end
-  def show
-    @products = Product.find(params[:name])
-    render :show
   end
 end
